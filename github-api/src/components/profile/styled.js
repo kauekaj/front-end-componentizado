@@ -45,7 +45,7 @@ export const WrapperUsername = styled.div`
 
 display: flex;
 align-items: center;
-margin-top 8px;
+margin-top: 8px;
 
 h3 {
     margin-right: 8px;
