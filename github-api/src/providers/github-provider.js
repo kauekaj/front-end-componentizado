@@ -28,7 +28,7 @@ const contextValue = {
     githubState,
 };
 
-    return <GithubProvider.Provider value={contextValue}>{children}</GithubProvider.Provider>;
+    return <GithubContext.Provider value={contextValue}>{children}</GithubContext.Provider>;
 };
 
 export default GithubProvider;
