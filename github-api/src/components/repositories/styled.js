@@ -12,7 +12,7 @@ padding: 4px;
 display: flex;
 margin: 0;
 `;
-// WrapperTabList.tabsRole = "TabList";
+WrapperTabList.tabsRole = "TabList";
 
 
 
@@ -35,7 +35,7 @@ cursor: pointer;
     border-bottom: 1px solid white;
 }
 `;
-// WrapperTabList.tabsRole = "Tab";
+WrapperTab.tabsRole = "Tab";
 
 export const WrapperTabPanel = styled(TabPanel)``;
 
