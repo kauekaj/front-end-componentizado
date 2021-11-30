@@ -1,11 +1,27 @@
 import React from "react";
 import * as S from "./styled"
+import useGithub from "../../hooks/github-hooks";
+import { useState } from "react";
 
 const Header = () => {
+    const { getUser } = useGithub();
+    const [usernameForSearch, setusernameForSearch] = useState()
+    const submitGetUser = () => {
+        if (!usernameForSearch) return;
+        return getUser(usernameForSearch);
+    }
+
     return <header>
         <S.Wrapper>
-            <input type="text" placeholder="Digite o username para pesquisa..."/>
-            <button type="submit"><span>Buscar</span></button>
+            <input
+            type="text"
+            placeholder="Digite o username para pesquisa..."
+            onChange={(event) => setusernameForSearch(event.target.value)}
+            />
+
+            <button type="submit" onClick={submitGetUser}>
+                <span>Buscar</span>
+            </button>
         </S.Wrapper>
     </header>;
 };
