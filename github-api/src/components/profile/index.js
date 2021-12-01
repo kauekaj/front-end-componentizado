@@ -33,7 +33,12 @@ const Profile = () => {
                 </S.WrapperUserGeneric>
                 <S.WrapperUserGeneric>
                 <h3>Blog:</h3>
-                <span> {githubState.user.blog} </span>
+                <a href={githubState.user.blog}
+                   target="_blank"
+                   rel="noreferrer"
+                >
+                    {githubState.user.blog}
+                </a>
                 </S.WrapperUserGeneric>
                 </div>
                 <S.WrapperStatusCount>
