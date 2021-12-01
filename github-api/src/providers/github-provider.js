@@ -31,20 +31,20 @@ const GithubProvider = ({ children }) => {
     const getUser = (username) => {
 
         
-        api.get(`users/${username}`).then(( { data: { user } }) => {
+        api.get(`users/${username}`).then(( { data }) => {
             setGithubState(prevState => ({
                 ...prevState,
                 user: {
-                    login: user.login,
-                    name: user.name,
-                    html_url: user.html_url,
-                    blog: user.blog,
-                    company: user.company,
-                    location: user.location,
-                    followers: user.followers,
-                    following: user.following,
-                    public_gists: user.public_gists,
-                    public_repos: user.public_repos,
+                    login: data.login,
+                    name: data.name,
+                    html_url: data.html_url,
+                    blog: data.blog,
+                    company: data.company,
+                    location: data.location,
+                    followers: data.followers,
+                    following: data.following,
+                    public_gists: data.public_gists,
+                    public_repos: data.public_repos,
             }}));
         });
     };

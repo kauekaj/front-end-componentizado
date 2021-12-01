@@ -4,7 +4,7 @@ import * as S from "./styled";
 
 const Profile = () => {
 
-    const { githubState } = useGithub()
+    const { githubState } = useGithub();
 
     return <S.Wrapper>         
                 <S.WrapperImage 
