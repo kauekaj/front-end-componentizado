@@ -8,7 +8,7 @@ const Profile = () => {
 
     return <S.Wrapper>         
                 <S.WrapperImage 
-                    src="https://avatars.githubusercontent.com/u/72616256?v=4"
+                    src={githubState.user.avatar}
                     alt="Avatar of user"
                 />
                 <S.WrapperInfoUser>
