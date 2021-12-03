@@ -16,7 +16,6 @@ margin: 0;
 WrapperTabList.tabsRole = "TabList";
 
 
-
 export const WrapperTab = styled(Tab)`
 border-radius: 16px;
 border: 1px solid #ccc;

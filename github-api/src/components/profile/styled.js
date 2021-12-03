@@ -4,6 +4,12 @@ export const Wrapper = styled.div`
 
 display: flex;
 align-items: flex-start;
+
+@media(max-width: 700px) {
+    flex-direction: column;
+    position: relative;
+  }
+
 `;
 
 export const WrapperBox = styled.div`    
@@ -13,6 +19,11 @@ border: 1px solid #ccc;
 box-shadow: 1px 2px #ccc;
 border-radius: 8px;
 width: 100%;
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
 
 `;
 
