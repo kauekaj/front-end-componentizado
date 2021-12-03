@@ -8,8 +8,10 @@ align-items: flex-start;
 @media(max-width: 700px) {
     flex-direction: column;
     position: relative;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 50px;
   }
-
 `;
 
 export const WrapperBox = styled.div`    

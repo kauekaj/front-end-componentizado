@@ -12,6 +12,13 @@ list-style-type: none;
 padding: 4px;
 display: flex;
 margin: 0;
+
+@media(max-width: 700px) {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+  }
 `;
 WrapperTabList.tabsRole = "TabList";
 
@@ -34,12 +41,19 @@ margin-top: 30px;
 &.is-selected {
     box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.5);
 }
+
+/* @media(max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    
+  } */
 `;
 WrapperTab.tabsRole = "Tab";
 
 export const WrapperTabPanel = styled(TabPanel)`
 padding: 16px;
-/* border: 1px solid #ccc; */
 display: none;
 margin-top: -5px;
 
@@ -55,4 +69,12 @@ export const WrapperList = styled.div`
 display: flex;
 justify-content: flex-start;
 flex-wrap: wrap;
+
+@media(max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    
+  }
 `;
