@@ -31,24 +31,28 @@ const Repositories = () => {
                   <S.WrapperTab>Starred</S.WrapperTab>
               </S.WrapperTabList>
               <S.WrapperTabPanel>
-                  {githubState.repositories.map((item) =>( 
-                    <RepositoryItem
-                        key={item.id}
-                        name= {item.name}
-                        linkToRepo= {item.fullname}
-                        fullName= {item.fullname}
-                    />
-                        ))}                   
+                  <S.WrapperList>
+                    {githubState.repositories.map((item) =>( 
+                        <RepositoryItem
+                            key={item.id}
+                            name= {item.name}
+                            linkToRepo= {item.html_url}
+                            fullName= {item.full_name}
+                        />
+                            ))}
+                    </S.WrapperList>                   
               </S.WrapperTabPanel>    
               <S.WrapperTabPanel>
-              {githubState.starred.map((item) =>( 
-                    <RepositoryItem
-                        key={item.id}
-                        name= {item.name}
-                        linkToRepo= {item.fullname}
-                        fullName= {item.fullname}
-                    />
-                        ))}   
+                <S.WrapperList>
+                    {githubState.starred.map((item) =>( 
+                            <RepositoryItem
+                                key={item.id}
+                                name= {item.name}
+                                linkToRepo= {item.html_url}
+                                fullName= {item.full_name}
+                            />
+                                ))}
+                </S.WrapperList>            
               </S.WrapperTabPanel>    
         </S.WrapperTabs>
         ) : (
