@@ -5,13 +5,14 @@ import * as S from "./styled";
 
 const Repositories = () => {
 
-    const { githubState, getUserRepos } = useGithub();
+    const { githubState, getUserRepos, getUserStarred } = useGithub();
     const [hasUserForSearchRepos, setUserForSearchRepos ] = useState(false)
 
     useEffect(() => {
 
         if (githubState.user.login) {
             getUserRepos(githubState.user.login);
+            getUserStarred(githubState.user.login);
         }
         setUserForSearchRepos(githubState.repositories);
     }, [githubState.user.login]);
