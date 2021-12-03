@@ -11,7 +11,9 @@ const Profile = () => {
                     src={githubState.user.avatar}
                     alt="Avatar of user"
                 />
+                  
                 <S.WrapperInfoUser>
+                <S.WrapperBox>           
                 <div>
                 <h1>{githubState.user.name}</h1>
                 <S.WrapperUserGeneric>
@@ -63,6 +65,7 @@ const Profile = () => {
                         <span>{githubState.user.public_repos}</span>  
                     </div>
                 </S.WrapperStatusCount>
+                </S.WrapperBox>
               </S.WrapperInfoUser>
                            
             </S.Wrapper>;

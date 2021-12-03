@@ -26,6 +26,7 @@ cursor: pointer;
 z-index: 99999;
 background-color: "#fff";
 margin: 8px;
+margin-top: 30px;
 
 &:focus {
     outline: none;

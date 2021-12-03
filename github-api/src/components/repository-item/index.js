@@ -5,7 +5,7 @@ const RepositoryItem = ({name, linkToRepo, fullName}) => {
     return <S.Wrapper>
       <S.WrapperTitle>{ name }</S.WrapperTitle>
       <br></br>
-      <S.WrapperFullName> full name:</S.WrapperFullName>
+      <S.WrapperFullName> Full Name:</S.WrapperFullName>
       <S.WrapperLink href={ linkToRepo }
                    target="_blank"
                    rel="noreferrer"

@@ -4,6 +4,15 @@ export const Wrapper = styled.div`
 
 display: flex;
 align-items: flex-start;
+`;
+
+export const WrapperBox = styled.div`    
+
+padding: 5px 50px 5px 5px;
+border: 1px solid #ccc;
+box-shadow: 1px 2px #ccc;
+border-radius: 8px;
+width: 100%;
 
 `;
 
@@ -64,3 +73,4 @@ border-radius: 50%;
 width: 200px;
 margin: 8px;
 `;
+
